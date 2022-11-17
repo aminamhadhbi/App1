@@ -1,0 +1,19 @@
+
+<p>lis</p>
+ <div *ngFor ="let p of listProdcut;let i=indice">
+
+  <div *ngIf="p.price<search||search==-1">
+   {{p.id}}
+  {{p.price }}
+  {{p.quantity }}
+  {{p.title }}
+  {{p.like }}
+<input type="submit" value="buy"(click)="decrementQuantity(p)">
+   <input type="submit" value="like"(click)="incrementlike(i)"  >
+
+
+ </div>
+
+ </div>
+
+<input type="number" [ngModel]="search" >

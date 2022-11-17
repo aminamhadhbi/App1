@@ -1,0 +1,14 @@
+<p>
+  {{titre}}
+</p>
+<div *ngFor ="let e of listeArticles">
+  <div *ngIf="e.categorie!='Travail'">
+  {{e.titre }}
+  {{e.auteur}}
+  {{e.date }}
+  {{e.contenu }}
+
+    <input type="submit" (click)="changeColor()" value="change  Color">
+
+  </div>
+</div>
